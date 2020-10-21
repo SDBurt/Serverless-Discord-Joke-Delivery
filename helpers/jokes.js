@@ -5,7 +5,7 @@ const axios = require('axios');
 const options = {
     headers: {
         Accept: 'application/json',
-        //   'User-Agent': 'My Library (YOUR LIBRARY URL HERE)',
+        'User-Agent': 'My Library (https://github.com/SDBurt/Serverless-Discord-Joke-Delivery)',
     },
 };
 
