@@ -9,9 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.20.0",
-    "dblapi.js": "^2.4.1",
-    "discord.js": "^12.4.0",
-    "dotenv": "^8.2.0"
+    "axios": "^0.20.0"
   }
 }
