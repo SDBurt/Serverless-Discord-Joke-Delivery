@@ -1,0 +1,17 @@
+{
+  "name": "dad-discord-bot",
+  "version": "1.0.0",
+  "description": "a discord bot that makes jokes",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dblapi.js": "^2.4.1",
+    "discord.js": "^12.4.0",
+    "dotenv": "^8.2.0"
+  }
+}

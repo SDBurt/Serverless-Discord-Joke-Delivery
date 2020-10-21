@@ -1,0 +1,22 @@
+org: seandburt
+app: dad-discord-bot
+service: dad-discord-bot
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-west-2
+
+custom:
+  env: ${file(.env.json)}
+
+functions:
+  joke:
+    handler: handler.joke
+    description: post a joke to the ralph pub discord
+    events:
+      - schedule: cron(30 8 * * ? *)
+    environment:
+      JOKES_API_URL: ${self:custom.env.JOKES_API_URL}
+      DISCORD_WEBHOOK_URL: ${self:custom.env.DISCORD_WEBHOOK_URL}
