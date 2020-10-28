@@ -16,7 +16,7 @@ functions:
     handler: handler.joke
     description: post a joke to the ralph pub discord
     events:
-      - schedule: cron(30 8 * * ? *)
+      - schedule: cron(0 16 * * ? *)
     environment:
       JOKES_API_URL: ${self:custom.env.JOKES_API_URL}
       DISCORD_WEBHOOK_URL: ${self:custom.env.DISCORD_WEBHOOK_URL}
